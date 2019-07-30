@@ -21,6 +21,11 @@
     <%= form.datetime_select :start_time %>
   </div>
 
+  <div class="field">
+    <%= form.label :room %>
+    <%= form.collection_select(:room_id, Room.all, :id, :title, prompt: true) %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
