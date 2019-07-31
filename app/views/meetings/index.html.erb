@@ -35,7 +35,7 @@
 
   <% meetings.each do |meeting| %>
     <div class="meeting">
-      <%= meeting.title %>
+      <%= "#{meeting.title} - #{meeting.room.title}" %>
     </div>
   <% end %>
 <% end %>
